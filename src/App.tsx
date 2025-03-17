@@ -1,14 +1,16 @@
-import { useGameStore } from "./store/gameStore";
+import { GameBoard } from "./components/GameBoard";
+import { Stats } from "./components/Stats";
+import { GameControls } from "./components/GameControls";
 import "./styles/main.scss";
 
 function App() {
-  const { score, increaseScore } = useGameStore();
-
   return (
     <div className="app">
       <h1>Memory Game</h1>
-      <div className="card">
-        <button onClick={increaseScore}>Score: {score}</button>
+      <div className="game-container">
+        <Stats />
+        <GameBoard />
+        <GameControls />
       </div>
     </div>
   );
