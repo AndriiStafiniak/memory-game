@@ -1,0 +1,18 @@
+// Variables
+$primary-color: #646cff;
+$background-color: #242424;
+
+// Global styles
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  background-color: $background-color;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+// Import other style modules
+@import 'components'; 
